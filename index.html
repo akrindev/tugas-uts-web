@@ -1,31 +1,114 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>CSS Positioning Exercise</title>
+    <title>Landing Page Menu Makanan</title>
     <style>
-        .blue-box {
-            width: 500px;
-            height: 200px;
-            background-color: blue;
-            position: relative;
-            margin-top: 200px;
-            margin-left: 200px;
+        /* Reset and basic styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        
-        .red-circle {
-            width: 150px;
-            height: 150px;
-            background-color: red;
-            border-radius: 50%;
-            position: absolute;
-            bottom: 0;
-            right: 300px;
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            width: 100%;
+            background-color: #333;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar a:hover {
+            color: #ff6347;
+        }
+
+        /* Main content styling */
+        .content {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            color: #333;
+        }
+
+        .menu-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .menu-item {
+            width: 200px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .menu-item h2 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .menu-item p {
+            color: #666;
+            font-size: 1rem;
         }
     </style>
 </head>
 <body>
-    <div class="blue-box">
-        <div class="red-circle"></div>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#">Daftar</a>
+        <a href="#">Menu</a>
+        <a href="#">Makanan</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Selamat Datang di Menu Kami</h1>
+        <div class="menu-list">
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/200" alt="Makanan 1">
+                <h2>Makanan 1</h2>
+                <p>Deskripsi singkat makanan 1.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/200" alt="Makanan 2">
+                <h2>Makanan 2</h2>
+                <p>Deskripsi singkat makanan 2.</p>
+            </div>
+            <!-- Tambahkan lebih banyak menu-item sesuai kebutuhan -->
+        </div>
     </div>
 </body>
 </html>
